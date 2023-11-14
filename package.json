@@ -8,13 +8,16 @@
   },
   "scripts": {
     "start": "node dist/index.js",
+<<<<<<< HEAD
     "dev": "ts-node-dev src/index.ts",
     "start:dev": "concurrently \"tsc -w\" \"nodemon server.js\"",
+=======
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/server.js\"",
+>>>>>>> ad1346fda4bc6c601f21e92b6344c5705ae15918
     "build": "tsc",
     "build:watch": "tsc -watch",
     "lint": "eslint . --ext .ts",
-    "prettier": "prettier --write 'src/**/*.ts'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier --write 'src/**/*.ts'"
   },
   "keywords": [],
   "author": "Your Name",
